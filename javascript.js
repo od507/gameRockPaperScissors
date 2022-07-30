@@ -16,28 +16,26 @@ function getComputerChoice(choice){
 }
 
 function playRound(humanPlayer,computerPlayer){
-    console.log(humanPlayer);
-    console.log(computerPlayer);
     if(humanPlayer == computerPlayer){
         return "It's a Draw";
     }
     else if(humanPlayer == "Rock" && computerPlayer == "Paper"){
-        return "You Lose! Paper beats Rock";
+        return "Computer won! Paper beats Rock";
     }
     else if(humanPlayer == "Rock" && computerPlayer == "Scissors"){
-        return "You Lose! Rock beats Scissors";
+        return "Human won! Rock beats Scissors";
     }
     else if(humanPlayer == "Paper" && computerPlayer == "Rock"){
-        return "You Lose! Paper beats Rock";
+        return "Human won! Paper beats Rock";
     }
     else if(humanPlayer == "Paper" && computerPlayer == "Scissors"){
-        return "You Lose! Scissors beats Paper";
+        return "Computer won! Scissors beats Paper";
     }
     else if(humanPlayer == "Scissors" && computerPlayer == "Rock"){
-        return "You Lose! Rock beats Scissors";
+        return "Computer won! Rock beats Scissors";
     }
     else if(humanPlayer == "Scissors" && computerPlayer == "Paper"){
-        return "You Lose! Scissors beats Paper";
+        return "Human won! Scissors beats Paper";
     }
     else{
         return "Wrong input";
